@@ -13,6 +13,9 @@ namespace CharacterManager
 {
     public partial class CharForm : Form
     {
+
+        private Character thisChar;
+
         public CharForm()
         {
             InitializeComponent();
@@ -20,19 +23,24 @@ namespace CharacterManager
 
         private void CharForm_Load(object sender, EventArgs e)
         {
-            using (var reader = new StreamReader(@"raylux.csv"))
+            
+            using (var reader = new StreamReader())
             {
-                List<string> listA = new List<string>();
+                List<string> stats = new List<string>();
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
 
-                    listA.Add(values[1]);
+                    stats.Add(values[1]);
                 }
-
-
+                thisChar = new Character(stats[0], int.Parse(stats[1]), stats[2]);
             }
+
+        }
+
+        private void ReadCSV()
+        {
 
         }
 

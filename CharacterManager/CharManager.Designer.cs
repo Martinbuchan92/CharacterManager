@@ -106,6 +106,7 @@
             this.BtnLoad.TabIndex = 7;
             this.BtnLoad.Text = "Open";
             this.BtnLoad.UseVisualStyleBackColor = true;
+            this.BtnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
             // 
             // BtnClose
             // 
@@ -188,6 +189,7 @@
             this.Controls.Add(this.CmbName);
             this.Name = "CharacterManager";
             this.Text = "Character Manager";
+            this.Load += new System.EventHandler(this.CharacterManager_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

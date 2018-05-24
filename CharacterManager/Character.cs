@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inquisitor
+namespace CharacterManager
 {
     class Character
     {
@@ -17,10 +17,16 @@ namespace Inquisitor
         private int Charisma;
         private int BaseAttackBonus;
         private int SpellsPerDay1;
+        private String FilePath;
         
         public Character()
         {
 
+        }
+
+        public Character(String filePath)
+        {
+            FilePath1 = filePath;
         }
 
         public Character(String Name, int Level, String Class) : this()
@@ -41,5 +47,6 @@ namespace Inquisitor
         public int Intelligence1 { get => Intelligence; set => Intelligence = value; }
         public int Constitution1 { get => Constitution; set => Constitution = value; }
         public int Strength1 { get => Strength; set => Strength = value; }
+        public String FilePath1 { get => FilePath; set => FilePath = value; }
     }
 }
