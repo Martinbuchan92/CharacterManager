@@ -49,6 +49,7 @@
             // 
             // CmbName
             // 
+            this.CmbName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbName.FormattingEnabled = true;
             this.CmbName.Location = new System.Drawing.Point(113, 29);
             this.CmbName.Name = "CmbName";
@@ -110,6 +111,7 @@
             // 
             // BtnClose
             // 
+            this.BtnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BtnClose.Location = new System.Drawing.Point(221, 135);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(75, 23);
@@ -174,8 +176,10 @@
             // 
             // CharacterManager
             // 
+            this.AcceptButton = this.BtnLoad;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BtnClose;
             this.ClientSize = new System.Drawing.Size(308, 194);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);

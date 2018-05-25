@@ -8,7 +8,8 @@ namespace CharacterManager
 {
     class Character
     {
-        private String Name, CharClass;
+        private String Name; 
+        private String CharClass;
         private int Strength;
         private int Dexterity;
         private int Constitution;
@@ -18,6 +19,10 @@ namespace CharacterManager
         private int BaseAttackBonus;
         private int SpellsPerDay1;
         private String FilePath;
+        private int WeapEnhBonus;
+        private int itemBonus = 2;
+        private readonly int ThreeLevelJudgement;
+        private readonly int FiveLevelJudgement;
         
         public Character()
         {
@@ -48,5 +53,9 @@ namespace CharacterManager
         public int Constitution1 { get => Constitution; set => Constitution = value; }
         public int Strength1 { get => Strength; set => Strength = value; }
         public String FilePath1 { get => FilePath; set => FilePath = value; }
+        public int WepEnhBonus1 { get => WeapEnhBonus; set => WeapEnhBonus = value; }
+        public int ThreeLevelJudgement1 { get => (1 + (Level1 / 3)); }
+        public int FiveLevelJudgement1 { get => (1+ (Level1 /5)); }
+        public int ItemBonus { get => itemBonus; set => itemBonus = value; }
     }
 }

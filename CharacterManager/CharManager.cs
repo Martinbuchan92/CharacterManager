@@ -46,9 +46,10 @@ namespace CharacterManager
         }
 
         private void BtnLoad_Click(object sender, EventArgs e)
-        {
-            Character newCharacter = new Character(path + CmbName.SelectedValue);
-            new CharForm().Show();
+        {            
+            Character newCharacter = new Character(path + CmbName.Text);
+            CharForm newForm = new CharForm(newCharacter);
+            newForm.Show();
         }
     }
 }

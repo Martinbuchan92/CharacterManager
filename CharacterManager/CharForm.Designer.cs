@@ -124,14 +124,14 @@
             this.txtCharacterClass.Location = new System.Drawing.Point(15, 49);
             this.txtCharacterClass.Name = "txtCharacterClass";
             this.txtCharacterClass.Size = new System.Drawing.Size(133, 20);
-            this.txtCharacterClass.TabIndex = 13;
+            this.txtCharacterClass.TabIndex = 1;
             // 
             // txtCharacterName
             // 
             this.txtCharacterName.Location = new System.Drawing.Point(15, 23);
             this.txtCharacterName.Name = "txtCharacterName";
             this.txtCharacterName.Size = new System.Drawing.Size(133, 20);
-            this.txtCharacterName.TabIndex = 12;
+            this.txtCharacterName.TabIndex = 0;
             // 
             // nupLVL
             // 
@@ -139,12 +139,7 @@
             this.nupLVL.Margin = new System.Windows.Forms.Padding(2);
             this.nupLVL.Name = "nupLVL";
             this.nupLVL.Size = new System.Drawing.Size(60, 20);
-            this.nupLVL.TabIndex = 7;
-            this.nupLVL.Value = new decimal(new int[] {
-            14,
-            0,
-            0,
-            0});
+            this.nupLVL.TabIndex = 2;
             // 
             // label6
             // 
@@ -172,12 +167,7 @@
             this.nupWeaponEnhancementBonus.Margin = new System.Windows.Forms.Padding(2);
             this.nupWeaponEnhancementBonus.Name = "nupWeaponEnhancementBonus";
             this.nupWeaponEnhancementBonus.Size = new System.Drawing.Size(60, 20);
-            this.nupWeaponEnhancementBonus.TabIndex = 10;
-            this.nupWeaponEnhancementBonus.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
+            this.nupWeaponEnhancementBonus.TabIndex = 3;
             // 
             // nupBAB
             // 
@@ -185,12 +175,7 @@
             this.nupBAB.Margin = new System.Windows.Forms.Padding(2);
             this.nupBAB.Name = "nupBAB";
             this.nupBAB.Size = new System.Drawing.Size(60, 20);
-            this.nupBAB.TabIndex = 0;
-            this.nupBAB.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
+            this.nupBAB.TabIndex = 4;
             // 
             // label1
             // 
@@ -231,12 +216,7 @@
             this.nupWIS.Margin = new System.Windows.Forms.Padding(2);
             this.nupWIS.Name = "nupWIS";
             this.nupWIS.Size = new System.Drawing.Size(60, 20);
-            this.nupWIS.TabIndex = 11;
-            this.nupWIS.Value = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
+            this.nupWIS.TabIndex = 9;
             // 
             // nupCHA
             // 
@@ -244,7 +224,7 @@
             this.nupCHA.Margin = new System.Windows.Forms.Padding(2);
             this.nupCHA.Name = "nupCHA";
             this.nupCHA.Size = new System.Drawing.Size(60, 20);
-            this.nupCHA.TabIndex = 13;
+            this.nupCHA.TabIndex = 10;
             // 
             // label10
             // 
@@ -273,11 +253,6 @@
             this.nupCON.Name = "nupCON";
             this.nupCON.Size = new System.Drawing.Size(60, 20);
             this.nupCON.TabIndex = 7;
-            this.nupCON.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
             // 
             // nupINT
             // 
@@ -285,7 +260,7 @@
             this.nupINT.Margin = new System.Windows.Forms.Padding(2);
             this.nupINT.Name = "nupINT";
             this.nupINT.Size = new System.Drawing.Size(60, 20);
-            this.nupINT.TabIndex = 9;
+            this.nupINT.TabIndex = 8;
             // 
             // label8
             // 
@@ -313,12 +288,7 @@
             this.nupSTR.Margin = new System.Windows.Forms.Padding(2);
             this.nupSTR.Name = "nupSTR";
             this.nupSTR.Size = new System.Drawing.Size(60, 20);
-            this.nupSTR.TabIndex = 3;
-            this.nupSTR.Value = new decimal(new int[] {
-            6,
-            0,
-            0,
-            0});
+            this.nupSTR.TabIndex = 5;
             // 
             // nupDEX
             // 
@@ -326,12 +296,7 @@
             this.nupDEX.Margin = new System.Windows.Forms.Padding(2);
             this.nupDEX.Name = "nupDEX";
             this.nupDEX.Size = new System.Drawing.Size(60, 20);
-            this.nupDEX.TabIndex = 5;
-            this.nupDEX.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
+            this.nupDEX.TabIndex = 6;
             // 
             // label3
             // 
@@ -370,6 +335,7 @@
             this.btnD20.TabIndex = 23;
             this.btnD20.Text = "D20";
             this.btnD20.UseVisualStyleBackColor = true;
+            this.btnD20.Click += new System.EventHandler(this.btnD20_Click);
             // 
             // groupBox2
             // 
@@ -397,7 +363,7 @@
             this.btnSkills.Margin = new System.Windows.Forms.Padding(2);
             this.btnSkills.Name = "btnSkills";
             this.btnSkills.Size = new System.Drawing.Size(76, 28);
-            this.btnSkills.TabIndex = 8;
+            this.btnSkills.TabIndex = 17;
             this.btnSkills.Text = "Skills";
             this.btnSkills.UseVisualStyleBackColor = true;
             // 
@@ -407,7 +373,7 @@
             this.btnSpellList.Margin = new System.Windows.Forms.Padding(2);
             this.btnSpellList.Name = "btnSpellList";
             this.btnSpellList.Size = new System.Drawing.Size(76, 28);
-            this.btnSpellList.TabIndex = 7;
+            this.btnSpellList.TabIndex = 16;
             this.btnSpellList.Text = "Spell List";
             this.btnSpellList.UseVisualStyleBackColor = true;
             // 
@@ -418,7 +384,7 @@
             this.chkBane.Margin = new System.Windows.Forms.Padding(2);
             this.chkBane.Name = "chkBane";
             this.chkBane.Size = new System.Drawing.Size(51, 17);
-            this.chkBane.TabIndex = 6;
+            this.chkBane.TabIndex = 15;
             this.chkBane.Text = "Bane";
             this.chkBane.UseVisualStyleBackColor = true;
             // 
@@ -429,7 +395,7 @@
             this.chkJustice.Margin = new System.Windows.Forms.Padding(2);
             this.chkJustice.Name = "chkJustice";
             this.chkJustice.Size = new System.Drawing.Size(59, 17);
-            this.chkJustice.TabIndex = 5;
+            this.chkJustice.TabIndex = 14;
             this.chkJustice.Text = "Justice";
             this.chkJustice.UseVisualStyleBackColor = true;
             // 
@@ -440,7 +406,7 @@
             this.chkDestruction.Margin = new System.Windows.Forms.Padding(2);
             this.chkDestruction.Name = "chkDestruction";
             this.chkDestruction.Size = new System.Drawing.Size(80, 17);
-            this.chkDestruction.TabIndex = 4;
+            this.chkDestruction.TabIndex = 13;
             this.chkDestruction.Text = "Destruction";
             this.chkDestruction.UseVisualStyleBackColor = true;
             // 
@@ -450,7 +416,7 @@
             this.nupLv5.Margin = new System.Windows.Forms.Padding(2);
             this.nupLv5.Name = "nupLv5";
             this.nupLv5.Size = new System.Drawing.Size(60, 20);
-            this.nupLv5.TabIndex = 3;
+            this.nupLv5.TabIndex = 12;
             // 
             // label5
             // 
@@ -468,7 +434,7 @@
             this.nupLv3.Margin = new System.Windows.Forms.Padding(2);
             this.nupLv3.Name = "nupLv3";
             this.nupLv3.Size = new System.Drawing.Size(60, 20);
-            this.nupLv3.TabIndex = 1;
+            this.nupLv3.TabIndex = 11;
             // 
             // label4
             // 
@@ -499,7 +465,7 @@
             this.chkEvil.Margin = new System.Windows.Forms.Padding(2);
             this.chkEvil.Name = "chkEvil";
             this.chkEvil.Size = new System.Drawing.Size(43, 17);
-            this.chkEvil.TabIndex = 0;
+            this.chkEvil.TabIndex = 18;
             this.chkEvil.Text = "Evil";
             this.chkEvil.UseVisualStyleBackColor = true;
             // 
@@ -524,7 +490,7 @@
             this.chkPointBlank.Margin = new System.Windows.Forms.Padding(2);
             this.chkPointBlank.Name = "chkPointBlank";
             this.chkPointBlank.Size = new System.Drawing.Size(107, 17);
-            this.chkPointBlank.TabIndex = 8;
+            this.chkPointBlank.TabIndex = 20;
             this.chkPointBlank.Text = "Point Blank <30ft";
             this.chkPointBlank.UseVisualStyleBackColor = true;
             // 
@@ -537,7 +503,7 @@
             this.chkHammerGap.Margin = new System.Windows.Forms.Padding(2);
             this.chkHammerGap.Name = "chkHammerGap";
             this.chkHammerGap.Size = new System.Drawing.Size(106, 17);
-            this.chkHammerGap.TabIndex = 1;
+            this.chkHammerGap.TabIndex = 21;
             this.chkHammerGap.Text = "Hammer the Gap";
             this.chkHammerGap.UseVisualStyleBackColor = true;
             // 
@@ -548,7 +514,7 @@
             this.chkRapidShot.Margin = new System.Windows.Forms.Padding(2);
             this.chkRapidShot.Name = "chkRapidShot";
             this.chkRapidShot.Size = new System.Drawing.Size(79, 17);
-            this.chkRapidShot.TabIndex = 7;
+            this.chkRapidShot.TabIndex = 19;
             this.chkRapidShot.Text = "Rapid Shot";
             this.chkRapidShot.UseVisualStyleBackColor = true;
             // 
@@ -573,7 +539,7 @@
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(72, 23);
-            this.btnClear.TabIndex = 4;
+            this.btnClear.TabIndex = 24;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
@@ -600,9 +566,10 @@
             this.btnDamage.Margin = new System.Windows.Forms.Padding(2);
             this.btnDamage.Name = "btnDamage";
             this.btnDamage.Size = new System.Drawing.Size(72, 23);
-            this.btnDamage.TabIndex = 1;
+            this.btnDamage.TabIndex = 25;
             this.btnDamage.Text = "Damage";
             this.btnDamage.UseVisualStyleBackColor = true;
+            this.btnDamage.Click += new System.EventHandler(this.btnDamage_Click);
             // 
             // groupBox4
             // 
@@ -625,7 +592,7 @@
             this.ChkCrit.Margin = new System.Windows.Forms.Padding(2);
             this.ChkCrit.Name = "ChkCrit";
             this.ChkCrit.Size = new System.Drawing.Size(41, 17);
-            this.ChkCrit.TabIndex = 2;
+            this.ChkCrit.TabIndex = 22;
             this.ChkCrit.Text = "Crit";
             this.ChkCrit.UseVisualStyleBackColor = true;
             // 
@@ -644,9 +611,10 @@
             this.btnAttack.Margin = new System.Windows.Forms.Padding(2);
             this.btnAttack.Name = "btnAttack";
             this.btnAttack.Size = new System.Drawing.Size(72, 23);
-            this.btnAttack.TabIndex = 0;
+            this.btnAttack.TabIndex = 23;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
+            this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
             // 
             // BtnNew
             // 
@@ -692,15 +660,17 @@
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(76, 36);
-            this.btnClose.TabIndex = 29;
+            this.btnClose.TabIndex = 26;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // CharForm
             // 
+            this.AcceptButton = this.btnDamage;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(363, 613);
             this.Controls.Add(this.BtnNew);
             this.Controls.Add(this.btnSave);
